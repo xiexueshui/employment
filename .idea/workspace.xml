@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ab5309f-60ec-4094-a9bd-b132475e1f25" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/config/GuavaCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/config/UserInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/controller/EmployController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/controller/UserEmployController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/EmployMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/UserEmployMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/xml/EmployMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/xml/UserEmployMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/xml/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/Employ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/EmployRequestParameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/UserEmploy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/IEmployService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/IUserEmployService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/impl/EmployServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/impl/UserEmployServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\repository" />
+        <option name="mavenHome" value="D:\soft\apache-maven-3.8.6" />
+        <option name="userSettingsFile" value="C:\Users\xsxie4\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2oTQfQTY41cTm7Irbwwfu3leO2q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/employment/employment/src/main/java/employment/infomation/config",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "应用程序.Application.executor": "Debug"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\employment\employment\src\main\java\employment\infomation\config" />
+      <recent name="D:\employment\employment\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="employment.infomation.config" />
+      <recent name="employment.infomation.po" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="employment.infomation.Application" />
+      <module name="employment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="employment.infomation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="5ab5309f-60ec-4094-a9bd-b132475e1f25" name="更改" comment="" />
+      <created>1730891190940</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730891190940</updated>
+    </task>
+    <servers />
+  </component>
+</project>
