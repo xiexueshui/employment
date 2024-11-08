@@ -4,39 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ab5309f-60ec-4094-a9bd-b132475e1f25" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/config/GuavaCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/config/UserInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/controller/EmployController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/controller/UserEmployController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/EmployMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/UserEmployMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/xml/EmployMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/xml/UserEmployMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/xml/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/Employ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/EmployRequestParameter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/UserEmploy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/IEmployService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/IUserEmployService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/impl/EmployServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/impl/UserEmployServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="5ab5309f-60ec-4094-a9bd-b132475e1f25" name="更改" comment="后端代码">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +29,7 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\repository" />
         <option name="mavenHome" value="D:\soft\apache-maven-3.8.6" />
-        <option name="userSettingsFile" value="C:\Users\xsxie4\.m2\settings.xml" />
+        <option name="userSettingsFile" value="D:\soft\apache-maven-3.8.6\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -73,15 +44,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.employment [install].executor": "Run",
+    "Maven.employment [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/employment/employment/src/main/java/employment/infomation/config",
+    "last_opened_file_path": "D:/employment/src/main/resources",
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "MavenSettings",
     "应用程序.Application.executor": "Debug"
   }
 }]]></component>
@@ -131,6 +104,19 @@
       <option name="presentableId" value="Default" />
       <updated>1730891190940</updated>
     </task>
+    <task id="LOCAL-00001" summary="后端代码">
+      <option name="closed" value="true" />
+      <created>1731029976864</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731029976864</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="后端代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="后端代码" />
   </component>
 </project>

@@ -1,0 +1,22 @@
+# 使用官方Java运行时环境作为基础镜像  
+FROM jdk1.8
+
+# 设置时区（可选，根据需要设置）
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# 将jar包添加到容器中
+# 假设jar包和Dockerfile在同一目录下
+COPY employment-1.0.jar /app/
+
+# 指定容器内的工作目录
+WORKDIR /app
+
+# 创建静态文件映射目录
+RUN mkdir -p /app/config;cd /app;jar -xf employment-1.0.jar;cp -r /app/BOOT-INF/classes/static /app/static;cp -r /app/BOOT-INF/classes/application.yml /app/config/
+
+# 暴露应用的端口（如果你的应用是web应用，并且监听在8080端口）
+EXPOSE 2334
+
+# 定义容器启动时执行的命令
+ENTRYPOINT ["java","-Xms512m","-Xmx512m","-jar","/app/employment-1.0.jar","-Dloader.path=config","> /dev/null 2>&1 &"]
