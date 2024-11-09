@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ab5309f-60ec-4094-a9bd-b132475e1f25" name="更改" comment="后端代码">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +60,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\employment\src\main\resources" />
       <recent name="D:\employment\employment\src\main\java\employment\infomation\config" />
       <recent name="D:\employment\employment\src\main\resources" />
     </key>
@@ -112,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731029976864</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="后端代码">
+      <option name="closed" value="true" />
+      <created>1731030308060</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731030308060</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -1,5 +1,5 @@
 # 使用官方Java运行时环境作为基础镜像  
-FROM jdk1.8
+FROM dockerpull.org/openjdk:8
 
 # 设置时区（可选，根据需要设置）
 ENV TZ=Asia/Shanghai

@@ -5,7 +5,7 @@ spring:
     password: xxs@2024
     driver-class-name: com.mysql.cj.jdbc.Driver
 server:
-  port: 2333
+  port: 2334
 
 
 #mybatis-plus配置控制台打印完整带参数SQL语句
