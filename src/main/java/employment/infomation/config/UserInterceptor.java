@@ -15,6 +15,10 @@ public class UserInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        if (request.getRequestURL().toString().endsWith("html")) {
+            return true;
+        }
+
         String token = getToken(request);
         if(token == null){
             response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "用户未登录");

@@ -14,13 +14,12 @@ public class WebConfig implements WebMvcConfigurer {
     UserInterceptor userInterceptor;
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-
     }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(userInterceptor)
-                .addPathPatterns("/**") // 拦截所有请求
-                .excludePathPatterns("/user/login", "/user/register"); // 排除某些请求
+                .addPathPatterns("/**")// 拦截所有请求
+                .excludePathPatterns("/user/login", "/user/register","user/logout","/static/**","index.html"); // 排除某些请求
     }
 }

@@ -1,6 +1,7 @@
 package employment.infomation.po;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -59,7 +60,7 @@ public class User implements Serializable {
     /**
      * 用户性别: [1=男, 2=女]
      */
-    private Byte sex;
+    private String sex;
 
     /**
      * 创建时间
@@ -71,5 +72,12 @@ public class User implements Serializable {
      */
     private LocalDateTime updateTime;
 
+    private String educational;
+
+    private String userDes;
+
     private Integer isAdmin;
+
+    @TableField(exist = false)
+    private String token ;
 }

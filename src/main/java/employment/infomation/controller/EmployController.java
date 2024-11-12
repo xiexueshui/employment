@@ -8,6 +8,7 @@ import employment.infomation.service.IEmployService;
 import employment.infomation.service.IUserEmployService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;
+import org.springframework.util.StringUtils;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import static employment.infomation.config.UserInterceptor.userThreadLocal;
@@ -40,16 +42,32 @@ public class EmployController {
 
     @RequestMapping("/list")
     public Result list(@Validated @RequestBody EmployRequestParameter employRequestParameter) {
-        Page page = new Page();
+        Page<Employ> page = new Page();
         page.setCurrent(employRequestParameter.getCurrent());
         page.setSize(employRequestParameter.getSize());
-        Page page1 = employService.page(page, Wrappers.lambdaQuery(Employ.class)
-                .like(Objects.isNull(employRequestParameter.getEmployName()), Employ::getEmployName, employRequestParameter.getEmployName())
-                .eq(!Objects.isNull(employRequestParameter.getEducational()), Employ::getEducational, employRequestParameter.getEducational())
-                .eq(!Objects.isNull(employRequestParameter.getMoneyType()), Employ::getMoneyType, employRequestParameter.getMoneyType())
-                .eq(!Objects.isNull(employRequestParameter.getProfessional()), Employ::getProfessional, employRequestParameter.getProfessional())
-                .eq(!Objects.isNull(employRequestParameter.getType()), Employ::getType, employRequestParameter.getType())
+
+
+        Page<Employ> page1 = employService.page(page, Wrappers.lambdaQuery(Employ.class)
+                .like(!StringUtils.isEmpty(employRequestParameter.getEmployName()), Employ::getEmployName, employRequestParameter.getEmployName())
+                .eq(!StringUtils.isEmpty(employRequestParameter.getEducational()), Employ::getEducational, employRequestParameter.getEducational())
+                .eq(!StringUtils.isEmpty(employRequestParameter.getMoneyType()), Employ::getMoneyType, employRequestParameter.getMoneyType())
+                .eq(!StringUtils.isEmpty(employRequestParameter.getProfessional()), Employ::getProfessional, employRequestParameter.getProfessional())
+                .eq(!StringUtils.isEmpty(employRequestParameter.getType()), Employ::getType, employRequestParameter.getType())
         );
+
+        Integer userId = GuavaCache.getUserId(String.valueOf(userThreadLocal.get()));
+        List<UserEmploy> userEmployList = userEmployService.list(Wrappers.lambdaQuery(UserEmploy.class).eq(UserEmploy::getUserId, userId));
+        if (!CollectionUtils.isEmpty(userEmployList)) {
+            Set<Integer> ids = userEmployList.stream().map(UserEmploy::getEmployId).collect(Collectors.toSet());
+            page1.getRecords().forEach(e -> {
+                if (ids.contains(e.getId())) {
+                    e.setIsShowTo(true);
+                }
+
+            });
+        }
+
+
         return Result.ok(page1);
     }
 
@@ -88,12 +106,12 @@ public class EmployController {
 
         Page reusult = employService.page(page, Wrappers.lambdaQuery(Employ.class)
                 .in(Employ::getId, userEmploys.stream().map(UserEmploy::getEmployId).collect(Collectors.toSet()))
-                .like(Objects.isNull(employRequestParameter.getEmployName()), Employ::getEmployName, employRequestParameter.getEmployName())
-                .eq(!Objects.isNull(employRequestParameter.getEducational()), Employ::getEducational, employRequestParameter.getEducational())
-                .eq(!Objects.isNull(employRequestParameter.getMoneyType()), Employ::getMoneyType, employRequestParameter.getMoneyType())
-                .eq(!Objects.isNull(employRequestParameter.getProfessional()), Employ::getProfessional, employRequestParameter.getProfessional())
-                .eq(!Objects.isNull(employRequestParameter.getType()), Employ::getType, employRequestParameter.getType())
-                .orderBy(true,true,Employ::getId)
+                .like(StringUtils.isEmpty(employRequestParameter.getEmployName()), Employ::getEmployName, employRequestParameter.getEmployName())
+                .eq(!StringUtils.isEmpty(employRequestParameter.getEducational()), Employ::getEducational, employRequestParameter.getEducational())
+                .eq(!StringUtils.isEmpty(employRequestParameter.getMoneyType()), Employ::getMoneyType, employRequestParameter.getMoneyType())
+                .eq(!StringUtils.isEmpty(employRequestParameter.getProfessional()), Employ::getProfessional, employRequestParameter.getProfessional())
+                .eq(!StringUtils.isEmpty(employRequestParameter.getType()), Employ::getType, employRequestParameter.getType())
+                .orderBy(true, true, Employ::getId)
         );
         return Result.ok(reusult);
     }

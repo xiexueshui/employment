@@ -2,6 +2,7 @@ package employment.infomation.controller;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import employment.infomation.config.GuavaCache;
 import employment.infomation.po.Employ;
 import employment.infomation.po.EmployRequestParameter;
 import employment.infomation.po.Result;
@@ -15,6 +16,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Objects;
+
+import static employment.infomation.config.UserInterceptor.userThreadLocal;
 
 /**
  * <p>
@@ -32,6 +35,7 @@ public class UserEmployController {
     IUserEmployService userEmployService;
     @RequestMapping("/add")
     public Result add(@Validated @RequestBody UserEmploy userEmploy){
+        userEmploy.setUserId(GuavaCache.getUserId(String.valueOf(userThreadLocal.get())));
         userEmployService.save(userEmploy);
         return Result.ok();
     }
