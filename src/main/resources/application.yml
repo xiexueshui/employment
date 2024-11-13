@@ -1,9 +1,13 @@
 spring:
-  datasource:
+   datasource:
     url: jdbc:mysql://1.94.109.12:3306/employment_infomation
     username: root
     password: xxs@2024
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+    hikari:
+      max-lifetime: 120000
+
 server:
   port: 2334
 

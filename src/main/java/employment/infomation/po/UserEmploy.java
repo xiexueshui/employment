@@ -28,7 +28,6 @@ public class UserEmploy implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    @NotNull
     private Integer userId;
     @NotNull
     private Integer employId;

@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ab5309f-60ec-4094-a9bd-b132475e1f25" name="更改" comment="后端代码">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="5ab5309f-60ec-4094-a9bd-b132475e1f25" name="更改" comment="后端代码" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,12 +20,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\repository" />
-        <option name="mavenHome" value="D:\soft\apache-maven-3.8.6" />
-        <option name="userSettingsFile" value="D:\soft\apache-maven-3.8.6\conf\settings.xml" />
+        <option name="mavenHome" value="D:/soft/apache-maven-3.9.0-bin/apache-maven-3.9.0" />
+        <option name="userSettingsFile" value="D:\soft\apache-maven-3.9.0-bin\apache-maven-3.9.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -46,15 +45,22 @@
   "keyToString": {
     "Maven.employment [install].executor": "Run",
     "Maven.employment [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/employment/src/main/resources",
-    "project.structure.last.edited": "项目",
+    "last_opened_file_path": "E:/employment-master/employment-master/pom.xml",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "4ce09bfd1006e2a03a51f1799a693ee8",
     "应用程序.Application.executor": "Debug"
   }
 }]]></component>
@@ -69,7 +75,7 @@
       <recent name="employment.infomation.po" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="employment.infomation.Application" />
       <module name="employment" />
@@ -83,11 +89,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="应用程序.Application" />
-      </list>
-    </recent_temporary>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="employment" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="employment.infomation.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -104,6 +112,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730891190940</updated>
+      <workItem from="1731134860351" duration="31457000" />
+      <workItem from="1731233900499" duration="647000" />
+      <workItem from="1731420074243" duration="330000" />
     </task>
     <task id="LOCAL-00001" summary="后端代码">
       <option name="closed" value="true" />
@@ -124,8 +135,18 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="后端代码" />
     <option name="LAST_COMMIT_MESSAGE" value="后端代码" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.baomidou.mybatisplus.extension.plugins.pagination.Page" memberName="records" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

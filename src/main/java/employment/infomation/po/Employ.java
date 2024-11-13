@@ -1,6 +1,7 @@
 package employment.infomation.po;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -70,4 +71,7 @@ public class Employ implements Serializable {
      * 薪资类型
      */
     private String moneyType;
+
+    @TableField(exist = false)
+    private Boolean isShowTo = false;
 }
