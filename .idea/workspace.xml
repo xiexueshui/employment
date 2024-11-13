@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ab5309f-60ec-4094-a9bd-b132475e1f25" name="更改" comment="后端代码" />
+    <list default="true" id="5ab5309f-60ec-4094-a9bd-b132475e1f25" name="更改" comment="后端代码">
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/VolunteerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/VolunteerRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/employment/infomation/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/User.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +32,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\repository" />
-        <option name="mavenHome" value="D:/soft/apache-maven-3.9.0-bin/apache-maven-3.9.0" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../soft/apache-maven-3.9.0-bin/apache-maven-3.9.0" />
         <option name="userSettingsFile" value="D:\soft\apache-maven-3.9.0-bin\apache-maven-3.9.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -54,7 +59,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/employment-master/employment-master/pom.xml",
+    "last_opened_file_path": "D:/employment/src/main/java/employment/infomation/controller",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -66,16 +71,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\employment\src\main\resources" />
-      <recent name="D:\employment\employment\src\main\java\employment\infomation\config" />
-      <recent name="D:\employment\employment\src\main\resources" />
+      <recent name="D:\employment\src\main\java\employment\infomation\controller" />
+      <recent name="D:\employment\src\main\java\employment\infomation\mapper\xml" />
+      <recent name="D:\employment\src\main\java\employment\infomation\mapper" />
+      <recent name="D:\employment\src\main\java\employment\infomation\po" />
+      <recent name="D:\employment\src\main\java\employment\infomation\service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="employment.infomation.config" />
       <recent name="employment.infomation.po" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="应用程序.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="employment.infomation.Application" />
       <module name="employment" />
@@ -96,6 +103,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Application" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
