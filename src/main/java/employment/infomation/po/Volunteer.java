@@ -71,5 +71,5 @@ public class Volunteer implements Serializable {
 
     private Integer volunteerCode;
 
-    private Integer year;
+    private String year;
 }

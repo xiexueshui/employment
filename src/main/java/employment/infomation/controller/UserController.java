@@ -126,8 +126,8 @@ public class UserController {
         Page page = new Page();
         page.setCurrent(userParameter.getCurrent());
         page.setSize(userParameter.getSize());
-        return Result.ok(userService.page(page,Wrappers.lambdaQuery(User.class).eq(!Objects.isNull(userParameter.getSex()),User::getSex,userParameter.getSex())
-                .like(!Objects.isNull(userParameter.getUsername()),User::getUsername,userParameter.getUsername())));
+        return Result.ok(userService.page(page,Wrappers.lambdaQuery(User.class).eq(!StringUtils.isEmpty(userParameter.getSex()),User::getSex,userParameter.getSex())
+                .like(!StringUtils.isEmpty(userParameter.getUsername()),User::getUsername,userParameter.getUsername())));
     }
 
     public static String decodeP(String p) {

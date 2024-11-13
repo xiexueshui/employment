@@ -9,6 +9,7 @@ import employment.infomation.service.IVolunteerService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
 import java.util.Objects;
@@ -30,7 +31,7 @@ public class VolunteerServiceImpl extends ServiceImpl<VolunteerMapper, Volunteer
     public List<String> getSpecialtyList(VolunteerRequest volunteerRequest) {
         LambdaQueryWrapper<Volunteer> queryWrapper = Wrappers.lambdaQuery(Volunteer.class)
                 .select(Volunteer::getSpecialtyName) // 选择 specialtyName 字段
-                .like(!Objects.isNull(volunteerRequest.getSpecialtyName()),Volunteer::getSpecialtyName,volunteerRequest.getSpecialtyName())
+                .like(!StringUtils.isEmpty(volunteerRequest.getSpecialtyName()),Volunteer::getSpecialtyName,volunteerRequest.getSpecialtyName())
                 .groupBy(Volunteer::getSpecialtyName);
         return volunteerMapper.selectObjs(queryWrapper);
     }

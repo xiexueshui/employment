@@ -8,6 +8,7 @@ import employment.infomation.po.Volunteer;
 import employment.infomation.po.VolunteerRequest;
 import employment.infomation.service.IVolunteerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,9 +36,9 @@ public class VolunteerController {
         page.setSize(volunteerRequest.getSize());
         page.setCurrent(volunteerRequest.getCurrent());
         Page page1 = volunteerService.page(page, Wrappers.lambdaQuery(Volunteer.class)
-                .eq(!Objects.isNull(volunteerRequest.getYear()),Volunteer::getYear, volunteerRequest.getYear())
-                .like(!Objects.isNull(volunteerRequest.getCollegeName()),Volunteer::getCollegeName, volunteerRequest.getCollegeName())
-                .eq(!Objects.isNull(volunteerRequest.getSpecialtyName()),Volunteer::getSpecialtyName, volunteerRequest.getSpecialtyName())
+                .eq(!StringUtils.isEmpty(volunteerRequest.getYear()),Volunteer::getYear, volunteerRequest.getYear())
+                .like(!StringUtils.isEmpty(volunteerRequest.getCollegeName()),Volunteer::getCollegeName, volunteerRequest.getCollegeName())
+                .eq(!StringUtils.isEmpty(volunteerRequest.getSpecialtyName()),Volunteer::getSpecialtyName, volunteerRequest.getSpecialtyName())
                 .orderByDesc(Volunteer::getLowestScore));
         return Result.ok(page1);
     }

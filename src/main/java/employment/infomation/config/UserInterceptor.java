@@ -15,7 +15,7 @@ public class UserInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        if (request.getRequestURL().toString().endsWith("html")) {
+        if (request.getRequestURL().toString().endsWith("html") || request.getRequestURL().toString().contains("zhiyuan")) {
             return true;
         }
 
