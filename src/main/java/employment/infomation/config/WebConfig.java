@@ -20,6 +20,6 @@ public class WebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(userInterceptor)
                 .addPathPatterns("/**")// 拦截所有请求
-                .excludePathPatterns("/user/login", "/user/register","user/logout","/static/**","index.html"); // 排除某些请求
+                .excludePathPatterns("/user/login", "/user/register","user/logout","/static/**","index.html","/volunteer/recommend/**"); // 排除某些请求
     }
 }

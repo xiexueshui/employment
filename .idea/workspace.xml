@@ -4,11 +4,92 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ab5309f-60ec-4094-a9bd-b132475e1f25" name="更改" comment="后端代码">
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/VolunteerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/VolunteerRequest.java" afterDir="false" />
+    <list default="true" id="5ab5309f-60ec-4094-a9bd-b132475e1f25" name="更改" comment="完整代码">
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/controller/RankingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/RankingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/mapper/xml/RankingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/Ranking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/IRankingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/service/impl/RankingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/css/app.dc12678eedbe0fc3f1df16708c935532.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/css/app.dc12678eedbe0fc3f1df16708c935532.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/fonts/element-icons.535877f.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/fonts/element-icons.732389d.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/img/bg.9c665b0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/0.80bf2d4885e806da140a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/0.80bf2d4885e806da140a.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/1.fcc734b89806aceb661c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/1.fcc734b89806aceb661c.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/2.725d9edc27b41eb12658.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/2.725d9edc27b41eb12658.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/3.ed28e518ff5c6ae6bb5f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/3.ed28e518ff5c6ae6bb5f.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/4.12f94b528a05f69a473a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/4.12f94b528a05f69a473a.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/5.2d04e24f38f5573f7715.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/5.2d04e24f38f5573f7715.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/6.fc5d6d3a78bfa47a18bf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/6.fc5d6d3a78bfa47a18bf.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/app.f306f465236cf4dbec9e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/app.f306f465236cf4dbec9e.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/manifest.26696d4121e205373d63.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/manifest.26696d4121e205373d63.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/vendor.378608d00d06f2f47524.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/zhiyuan/static/js/vendor.378608d00d06f2f47524.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/.postcssrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/config/dev.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/config/prod.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/config/test.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/api/teacher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/api/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/assets/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/assets/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/assets/jy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/assets/loyout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/components/navigation/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/components/navigation/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/components/navigation/register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/components/navigation/slider.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/components/teacher_nav/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/const/rules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/reqeust/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/utils/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/views/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/views/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/views/manage/employManager.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/views/manage/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/views/manage/userManager.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/src/views/user.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/static/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/test/e2e/custom-assertions/elementCount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/test/e2e/nightwatch.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/test/e2e/runner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/test/e2e/specs/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/test/unit/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/test/unit/jest.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/test/unit/setup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/test/unit/specs/HelloWorld.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhiyuaan/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_11_13_11_31____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2024_11_13_11_31____.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/employment/infomation/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/po/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/employment/infomation/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/employment/infomation/controller/VolunteerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employment/infomation/controller/VolunteerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +113,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../soft/apache-maven-3.9.0-bin/apache-maven-3.9.0" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.9.0-bin/apache-maven-3.9.0" />
         <option name="userSettingsFile" value="D:\soft\apache-maven-3.9.0-bin\apache-maven-3.9.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -46,43 +127,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.employment [install].executor": "Run",
-    "Maven.employment [package].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/employment/src/main/java/employment/infomation/controller",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "4ce09bfd1006e2a03a51f1799a693ee8",
-    "应用程序.Application.executor": "Debug"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.employment [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.employment [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/soft/employment/src/main/java/employment/infomation/service/impl&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;4ce09bfd1006e2a03a51f1799a693ee8&quot;,
+    &quot;应用程序.Application.executor&quot;: &quot;Debug&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\employment\src\main\java\employment\infomation\controller" />
-      <recent name="D:\employment\src\main\java\employment\infomation\mapper\xml" />
-      <recent name="D:\employment\src\main\java\employment\infomation\mapper" />
-      <recent name="D:\employment\src\main\java\employment\infomation\po" />
-      <recent name="D:\employment\src\main\java\employment\infomation\service" />
+      <recent name="D:\soft\employment\src\main\java\employment\infomation\service\impl" />
+      <recent name="D:\soft\employment\src\main\java\employment\infomation\service" />
+      <recent name="D:\soft\employment\src\main\java\employment\infomation\controller" />
+      <recent name="D:\soft\employment\src\main\java\employment\infomation\mapper\xml" />
+      <recent name="D:\soft\employment\src\main\java\employment\infomation\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="employment.infomation.config" />
       <recent name="employment.infomation.po" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Application">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="employment.infomation.Application" />
       <module name="employment" />
@@ -105,7 +186,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Application" />
+        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -127,6 +208,12 @@
       <workItem from="1731134860351" duration="31457000" />
       <workItem from="1731233900499" duration="647000" />
       <workItem from="1731420074243" duration="330000" />
+      <workItem from="1731504131889" duration="4818000" />
+      <workItem from="1732798049289" duration="1433000" />
+      <workItem from="1732799494072" duration="2120000" />
+      <workItem from="1733046510950" duration="1608000" />
+      <workItem from="1733059799526" duration="3921000" />
+      <workItem from="1733147017550" duration="2311000" />
     </task>
     <task id="LOCAL-00001" summary="后端代码">
       <option name="closed" value="true" />
@@ -144,21 +231,61 @@
       <option name="project" value="LOCAL" />
       <updated>1731030308060</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完整代码">
+      <created>1731420524553</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731420524553</updated>
+    </task>
+    <task id="LOCAL-00004" summary="完整代码">
+      <created>1731508970579</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731508970579</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="后端代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="后端代码" />
+    <MESSAGE value="完整代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="完整代码" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/employment/infomation/config/UserInterceptor.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.baomidou.mybatisplus.extension.plugins.pagination.Page" memberName="records" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/employment$Application.ic" NAME="Application Coverage Results" MODIFIED="1731504733658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>employment.infomation.*</FILTER>
+    </SUITE>
   </component>
 </project>
